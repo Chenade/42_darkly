@@ -32,5 +32,4 @@ while IFS= read -r folder; do
 done < "$folder_names_file"
 
 #echo "Folders created successfully."
-tree
 
