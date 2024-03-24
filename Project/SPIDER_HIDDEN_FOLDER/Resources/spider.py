@@ -27,8 +27,6 @@ class FolderSpider(scrapy.Spider):
 
     def parse_readme(self, response):
         readme_content = response.body.decode(response.encoding)
-        if 'flag' in readme_content:
-            with open('output.txt', 'a') as f:
-                f.write(f"Path: {start_urls}{response.meta['path']} | Content:\n{readme_content}\n\n")
-            sys.exit()
+        with open('output.txt', 'a') as f:
+            f.write(f"Path: {start_urls}{response.meta['path']} | Content:\n{readme_content}\n\n")
 
