@@ -3,7 +3,7 @@ import sys
 
 class FolderSpider(scrapy.Spider):
     name = 'folderspider'
-    start_urls = ['http://192.168.56.101/.hidden/']
+    start_urls = ['http://192.168.56.101/.hidden']
 
     def parse(self, response, path=''):
         folders = response.css('a::text').extract()
@@ -29,6 +29,6 @@ class FolderSpider(scrapy.Spider):
         readme_content = response.body.decode(response.encoding)
         if 'flag' in readme_content:
             with open('output.txt', 'a') as f:
-                f.write(f"Path: {response.meta['path']} | Content:\n{readme_content}\n\n")
+                f.write(f"Path: {start_urls}{response.meta['path']} | Content:\n{readme_content}\n\n")
             sys.exit()
 

@@ -1,0 +1,64 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: admin/dirb.log
+START_TIME: Sun Mar 24 09:24:29 2024
+URL_BASE: http://192.168.56.101/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://192.168.56.101/ ----
+==> DIRECTORY: http://192.168.56.101/admin/
+==> DIRECTORY: http://192.168.56.101/audio/
+==> DIRECTORY: http://192.168.56.101/css/
+==> DIRECTORY: http://192.168.56.101/errors/
++ http://192.168.56.101/favicon.ico (CODE:200|SIZE:1406)
+==> DIRECTORY: http://192.168.56.101/fonts/
+==> DIRECTORY: http://192.168.56.101/images/
+==> DIRECTORY: http://192.168.56.101/includes/
++ http://192.168.56.101/index.php (CODE:200|SIZE:6892)
+==> DIRECTORY: http://192.168.56.101/js/
++ http://192.168.56.101/robots.txt (CODE:200|SIZE:53)
+==> DIRECTORY: http://192.168.56.101/whatever/
+
+---- Entering directory: http://192.168.56.101/admin/ ----
+==> DIRECTORY: http://192.168.56.101/admin/css/
+==> DIRECTORY: http://192.168.56.101/admin/fonts/
++ http://192.168.56.101/admin/index.php (CODE:200|SIZE:1432)
+
+---- Entering directory: http://192.168.56.101/audio/ ----
+
+---- Entering directory: http://192.168.56.101/css/ ----
+==> DIRECTORY: http://192.168.56.101/css/images/
+
+---- Entering directory: http://192.168.56.101/errors/ ----
+
+---- Entering directory: http://192.168.56.101/fonts/ ----
+
+---- Entering directory: http://192.168.56.101/images/ ----
+
+---- Entering directory: http://192.168.56.101/includes/ ----
+
+---- Entering directory: http://192.168.56.101/js/ ----
+
+---- Entering directory: http://192.168.56.101/whatever/ ----
++ http://192.168.56.101/whatever/htpasswd (CODE:200|SIZE:38)
+
+---- Entering directory: http://192.168.56.101/admin/css/ ----
+==> DIRECTORY: http://192.168.56.101/admin/css/images/
+
+---- Entering directory: http://192.168.56.101/admin/fonts/ ----
+
+---- Entering directory: http://192.168.56.101/css/images/ ----
+
+---- Entering directory: http://192.168.56.101/admin/css/images/ ----
+
+-----------------
+END_TIME: Sun Mar 24 09:24:40 2024
+DOWNLOADED: 64568 - FOUND: 5
