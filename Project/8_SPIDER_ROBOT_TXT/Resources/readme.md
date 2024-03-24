@@ -1,7 +1,7 @@
 ## How we found the flag
 - First, We used "Dirb" which is a Web Content Scanner, it looks for existing (and/or hidden) Web Objects. We used the following command
 ```
-dirb http://{ip} -o dirb.log
+dirb http://192.168.56.101 {project path}/8_SPIDER_ROBOT_TXT/Resources/common.txt > dirb.log
 ```
 
 -  The output is in dirb.log in this directory. We found something named "http://{ip}/robots.txt", with the content
@@ -25,6 +25,12 @@ root:qwerty123@
 
 ## Resources
 - DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the responses.
+- install dirb in cluster
+```
+apt-get download dirb
+dpkg -x dirb*.deb $HOME/dirb
+export PATH="$PATH:$HOME/dirb/usr/bin"
+```
 - robots.txt is the filename used for implementing the Robots Exclusion Protocol, a standard used by websites to indicate to visiting web crawlers and other web robots which portions of the website they are allowed to visit. 
 
 

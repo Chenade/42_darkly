@@ -1,5 +1,5 @@
 ## How we found the flag
-- When we checked the cookie of the iste, we found out that there is a cookie named i_am_admin, and the value is "68934a3e9455fa72420237eb05902327" which is frecogized as "false" after encrpyed with md5
+- When we checked the cookie of the website, we found out that there is a cookie named i_am_admin, and the value is "68934a3e9455fa72420237eb05902327" which is frecogized as "false" after encrpyed with md5
 - So, we encryoted "true" in md5, and replace the value the the cookie
 - I got the access of the admin and find the flag
 
