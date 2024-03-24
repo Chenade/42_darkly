@@ -23,11 +23,13 @@ root:qwerty123@
 
 - And we used the new pair of crendital to login on admin section, and we got the flag
 
+## Resources
+- DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the responses.
+- robots.txt is the filename used for implementing the Robots Exclusion Protocol, a standard used by websites to indicate to visiting web crawlers and other web robots which portions of the website they are allowed to visit. 
 
 
 ## How to exploit the breach
-- DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the responses.
-- robots.txt is the filename used for implementing the Robots Exclusion Protocol, a standard used by websites to indicate to visiting web crawlers and other web robots which portions of the website they are allowed to visit. 
+- By using the the web scanner, we can easily find all the web object, even it's hidden
 
 ## What's the correct way
 - Be careful with robots.txt content, avoid including any sensitive information in this file, as it is intended for directing web crawlers and other automated agents.

@@ -9,11 +9,9 @@
 
 
 ## How to exploit the breach
-- Bypassing File Upload Restrictions: Manipulate file extension and content-type headers to disguise PHP code as image files with JPEG extensions, exploiting the server's validation mechanism for arbitrary code execution and unauthorized access.
-
-- Command Injection via CURL Request: Craft a POST request using CURL to upload a malicious file disguised as an image, bypassing validation and potentially compromising sensitive data by executing arbitrary PHP code on the server.
-
-- Exploiting Lack of Input Sanitization: Inject malicious commands or scripts into file uploads due to inadequate input sanitization, allowing for the embedding of PHP code within image data to gain unauthorized access or manipulate data.
+- Manipulate file extension and content-type headers to disguise PHP code as image files with JPEG extensions, exploiting the server's validation mechanism for arbitrary code execution and unauthorized access.
+- Craft a POST request using CURL to upload a malicious file disguised as an image, bypassing validation and potentially compromising sensitive data by executing arbitrary PHP code on the server.
+- Inject malicious commands or scripts into file uploads due to inadequate input sanitization, allowing for the embedding of PHP code within image data to gain unauthorized access or manipulate data.
 
 ## What's the correct way
 - Enhance validation to check both file extensions and content types thoroughly.

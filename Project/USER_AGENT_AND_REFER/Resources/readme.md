@@ -14,7 +14,7 @@
     - User-Agent: ft_bornToSec
 
 ## How to exploit the breach
-- 
+- Getting different information vy changing the header
 
 ## What's the correct way
-- From this breach, we just learned that we can learn some useful informations from the header in the requeat
+- Don't fully trust the information on header, and render important information on the page. Header is easy to modify in request.

@@ -4,7 +4,7 @@
 - We wrote a python script with Scrapy to systematically traversed through the folders and subfolders, extracting the content of README files encountered.
 - The Scrapy spider followed links within each folder, recursively exploring nested directories to locate any README files present.
 - If a README file was found within a folder, its content was extracted and analyzed for the presence of the term "flag."
-- Upon encountering a README file containing the term "flag," its content was stored in an output file for further examination, marking the successful identification of sensitive information.
+- Upon encountering a README file containing the term "flag," its content was stored in an output file for further examinatkion, marking the successful identification of sensitive information.
 
 - We can start the python script with 
 ```
@@ -14,7 +14,7 @@ scrapy runspider spider.py
 - After the scripted and we can find the flag in our output.txt file
 
 ## How to exploit the breach
-An automated script was used to systematically search through directories and retrieve content. However, unauthorized access to sensitive information, such as flags, could potentially occur if proper access controls are not in place.
+An automated script was used to systematically search through directories and retrieve content. However, unauthorized access to sensitive information, could potentially occur if proper access controls are not in place.
 
 ## What's the correct way
 - Implement strict access controls and permission settings to prevent unauthorized access to sensitive directories and files.
